@@ -1,0 +1,19 @@
+.head{
+  display:flex;
+}
+.head img{
+  height:80px;
+  margin-right:auto;
+}
+.head h3{
+  margin:0px;
+  font-family:serif;
+  
+}
+.head i{
+  font-size:10px;
+  font-weight:80;
+}
+.head span{
+  margin-top:20px;
+}
