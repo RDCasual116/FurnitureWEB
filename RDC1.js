@@ -1,4 +1,5 @@
 import React from 'react';
+import Main from "./main"
 export default function Rd(){
   return (<div>
   <div className="head">
@@ -14,5 +15,6 @@ export default function Rd(){
   <li><a href="">About</a></li>
   </ul>
   </nav>
+  <div><Main/></div>
   </div>);
 }

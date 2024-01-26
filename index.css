@@ -39,3 +39,24 @@
   border-radius:50px;
   
 }
+.pcard{
+  height:300px;
+  width:120px;
+  border:1px solid black;
+  border-radius:20px;
+  margin:5px;
+  flex:0 0 auto;
+}
+.pcard img{
+  height:140px;
+  width:100px;
+  padding:5px 0 0 10px;
+  
+}
+.closet{
+  border-top:2px solid black;
+  border-bottom:2px solid black;
+  height:310px;
+  display:flex;
+  overflow-x:auto;
+}
