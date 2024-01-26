@@ -7,21 +7,25 @@ export default[
   },{
     name:"2 Door (regular)",
     price:"₹8,000",
-    pic:"/pics/2d.jpg"
+    pic:"/pics/2d.jpg",
+    desc:"A 2 door regular closet ideal for storing files or clothes efficiently."
   },
   {
     name:"2 Door (locker)",
     price:"₹9,000",
-    pic:"/pics/2dlocker.jpg"
+    pic:"/pics/2dlocker.jpg",
+    desc:"A 2 Door closet with a secure locker and spacious interior to store valuables and other things."
   },
   {
     name:"2 Door (Mirror)",
     price:"₹8,500",
-    pic:"/pics/2dmirror.jpg"
+    pic:"/pics/2dmirror.jpg",
+    desc:"A door closet equipped with mirror to help you get ready,and store your accessories."
   },
   {
     name:"2 Door (wood)",
     price:"₹9,000",
-    pic:"/pics/woodstyle.jpg"
+    pic:"/pics/woodstyle.jpg",
+    desc:"A regular locker closet with special wooden look and finish."
   }
   ]
