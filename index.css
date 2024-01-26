@@ -29,7 +29,6 @@
 }
 .navi li a{
   text-decoration:none;
-  color:black;
   padding:5px;
   color:white;
   
@@ -89,4 +88,20 @@ padding-top:10px;
 .purchase span{
   display:flex;
   justify-content:space-around;
+}
+.footer{
+  height:125px;
+  background-color:grey;
+  border-radius:5px 5px 0 0;
+}
+.footer ul{
+  display:flex;
+  justify-content:center;
+list-style:none;
+  }
+  .footer li{
+    margin:15px;
+  }
+.footer i{
+  font-size:20px;
 }
