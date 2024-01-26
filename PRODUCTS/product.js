@@ -2,7 +2,8 @@ export default[
   {
     name:"3 Door(full size)",
     price:"₹12,000",
-    pic:"/pics/3door.jpg"
+    pic:"/pics/3door.jpg",
+    desc:"A 3 door wardrobe with two different sections,with lockers on each side. Each section has multiple shelfs for easy storage, also comes with a secret locker for documents"
   },{
     name:"2 Door (regular)",
     price:"₹8,000",

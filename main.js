@@ -4,13 +4,14 @@ import data from "./PRODUCTS/product"
 export default function main(){
    const [r,setr]=React.useState(true);
    const [a,seta]=React.useState([]);
-  const pc =data.map(a=>{
+  const pc =data.map(ab=>{
     return(
       <Pc
-      key={a.name}
-      name={a.name}
-      pic={a.pic}
-      price={a.price}
+      key={ab.name}
+      name={ab.name}
+      pic={ab.pic}
+      price={ab.price}
+      desc={ab.desc}
       func={seta}
       />
       );
