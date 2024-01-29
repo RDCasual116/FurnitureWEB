@@ -29,19 +29,19 @@ export default function Rd(){
   <i>Storage with elegance</i></span></div>
   <nav>
   <ul className="navi">
-  <li><a onClick={()=>setop(1)}><i class='bx bx-home'></i> Home</a></li>
-  <li><a onClick={()=>setop(2)}><i class='bx bx-category' ></i> Products</a></li>
-  <li><a onClick={()=>setop(4)}><i class='bx bx-cart' ></i> Cart</a></li>
-  <li><a onClick={()=>setop(3)}><i class='bx bx-purchase-tag' ></i> Orders</a></li>
-  <li><a onClick={()=>setop(5)}><i class='bx bxs-contact' ></i> About</a></li>
+  <li><a onClick={()=>setop(1)}><i className='bx bx-home'></i> Home</a></li>
+  <li><a onClick={()=>setop(2)}><i className='bx bx-category' ></i> Products</a></li>
+  <li><a onClick={()=>setop(4)}><i className='bx bx-cart' ></i> Cart</a></li>
+  <li><a onClick={()=>setop(3)}><i className='bx bx-purchase-tag' ></i> Orders</a></li>
+  <li><a onClick={()=>setop(5)}><i className='bx bxs-contact' ></i> About</a></li>
   </ul>
   </nav>
   <div>{output}</div>
   <div className="footer">
   <ul className="links">
-  <li><a href="https://www.linkedin.com/in/ritish-das-979536277"><i class='bx bxl-linkedin-square' ></i></a></li>
-  <li><a href="https://x.com/RDCasual116?t=3jM2lOpd7J5IGErX0naXgQ&s=09"></a><i class='bx bxl-twitter'></i></li>
-  <li><a href="https://github.com/RDCasual116"></a><i class='bx bxl-github'></i></li>
+  <li><a href="https://www.linkedin.com/in/ritish-das-979536277"><i className='bx bxl-linkedin-square' ></i></a></li>
+  <li><a href="https://x.com/RDCasual116?t=3jM2lOpd7J5IGErX0naXgQ&s=09"><i className='bx bxl-twitter'></i></a></li>
+  <li><a href="https://github.com/RDCasual116"><i className='bx bxl-github'></i></a></li>
   </ul>
   <small>DAS STEEL is a real shop and you can actually purchase these products from there<br/>contact:9406000612</small>
   </div>

@@ -90,9 +90,11 @@ padding-top:10px;
   justify-content:space-around;
 }
 .footer{
-  height:125px;
+  height:160px;
   background-color:grey;
   border-radius:5px 5px 0 0;
+  position:relative;
+  top:100vh;
 }
 .footer ul{
   display:flex;
@@ -106,12 +108,15 @@ list-style:none;
   font-size:20px;
 }
 .cart{
+  border:1px solid black;
+  border-radius:10px;
+}
+.cart div{
   width:100%;
   height:150px;
   display:flex;
   align-items:center;
-  border:1px solid black;
-  border-radius:10px;
+  
 }
 .cart img{
   height:120px;
@@ -121,4 +126,20 @@ list-style:none;
   margin-right:auto;
   margin-left:15px;
   font-size:1.5em;
+}
+.cbutton{
+  
+  display:flex;
+  justify-content:space-around;
+  
+}
+.cbutton button{
+  background-color:green;
+  color:white;
+  margin-bottom:5px;
+  border-radius:10px;
+}
+.cbutton button:hover{
+  background-color:orange;
+  cursor:pointer;
 }

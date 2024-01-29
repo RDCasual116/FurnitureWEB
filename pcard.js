@@ -6,6 +6,7 @@ export default function pcard(props){
     <div
     className="pcard"
     onClick={()=>props.func([<Purchase
+    key={props.name}
     name={props.name}
     price={props.price}
     pic={props.pic}
