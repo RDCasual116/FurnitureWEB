@@ -1,15 +1,24 @@
 import React from "react";
 export let arr=[];
 export default function cart() {
-  function remov(i){
-   for(let a=i+1;a<arr.length;a++){ 
-   arr[a-1]=arr[a];}
-   arr.pop();
+  function remov(name){
+  for(let a=0;a<arr.length;a++){
+    if(name==arr[a].name){
+      for(let b=a;b+1<arr.length;b++){
+        arr[b]=arr[b+1];
+      }
+      arr.pop();
+      break;
+    }
+  }
    setab((prev)=>{
     let re=[];
     for(let a=0;a<prev.length;a++){
-     if(re.length!=i)
+     if(prev[a].key!=name){
      re.push(prev[a]);}
+     
+    }
+   // console.log(name)
      return re;
    });
   }
@@ -23,7 +32,9 @@ export default function cart() {
      <big>{a.price}</big>
      </div>
      <span className="cbutton"><button>Buy</button>
-     <button onClick={()=>{remov(index);
+     <button onClick={()=>{
+     //console.log(a.name)
+     remov(a.name);
      }}>Remove</button>
      </span>
       </div>
