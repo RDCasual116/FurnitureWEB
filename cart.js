@@ -1,6 +1,11 @@
 import React from "react";
 export let arr=[];
 export default function cart() {
+ function empty(){
+   var temp=[];
+arr=temp;
+   setab([]);
+ }
   function remov(name){
   for(let a=0;a<arr.length;a++){
     if(name==arr[a].name){
@@ -40,5 +45,8 @@ export default function cart() {
       </div>
       );
   }));
-  return (<div>{ab}</div>);
+  return (<div>{ab}
+  <button className="buy1">Buy</button>
+  <button className="buy2" onClick={empty}>Remove</button>
+  </div>);
 }

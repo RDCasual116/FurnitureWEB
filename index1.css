@@ -1,0 +1,169 @@
+.head{
+  display:flex;
+}
+.head img{
+  height:80px;
+  margin-right:auto;
+}
+.head h3{
+  margin:0px;
+  font-family:serif;
+  
+}
+.head i{
+  font-size:10px;
+  font-weight:80;
+}
+.head span{
+  margin-top:20px;
+  padding-right:17px;
+}
+.navi{
+  display:flex;
+  justify-content:space-around;
+  list-style:none;
+  padding:5px 5px;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  background-color: orange ;
+}
+.navi li a{
+  text-decoration:none;
+  padding:5px;
+  color:white;
+  
+}
+.navi li a:hover{
+  background-color:grey;
+  border-radius:50px;
+  
+}
+.pcard{
+  height:300px;
+  width:120px;
+  border:1px solid grey;
+  border-radius:20px;
+  margin:5px;
+  display: inline-block;
+ 
+}
+.pcard img{
+  height:140px;
+  width:100px;
+  padding:5px 0 0 10px;
+  
+}
+.closet{
+  border-top:3px solid green;
+}
+.main{
+  background-color:orange;
+  color:white;
+  border-radius:50px;
+  padding:8px;
+}
+.purchase{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.purchase img{
+  height:60vh;
+  border:5px solid orange;
+ object-fit:contain;
+padding-top:10px;
+ padding-bottom:10px;
+}
+.purchase button{
+  background-color:green;
+  color:white;
+  width:180px;
+  height:50px;
+  border-radius:50px;
+}
+.purchase button:hover{
+  background-color:orange;
+  cursor:pointer;
+}
+.purchase span{
+  display:flex;
+  justify-content:space-around;
+}
+.footer{
+  height:160px;
+  background-color:grey;
+  border-radius:5px 5px 0 0;
+  position:relative;
+  top:100vh;
+}
+.footer ul{
+  display:flex;
+  justify-content:center;
+list-style:none;
+  }
+  .footer li{
+    margin:15px;
+  }
+.footer i{
+  font-size:20px;
+}
+.cart{
+  border:1px solid black;
+  border-radius:10px;
+}
+.cart div{
+  width:100%;
+  height:150px;
+  display:flex;
+  align-items:center;
+  
+}
+.cart img{
+  height:120px;
+  margin-left:15px;
+}
+.cart span{
+  margin-right:auto;
+  margin-left:15px;
+  font-size:1.5em;
+}
+.cbutton{
+  
+  display:flex;
+  justify-content:space-around;
+  
+}
+.cbutton button{
+  background-color:green;
+  color:white;
+  margin-bottom:5px;
+  border-radius:10px;
+}
+.cbutton button:hover{
+  background-color:orange;
+  cursor:pointer;
+}
+.buy1,.buy2{
+  font-family:serif;
+  color:white;
+  background-color:green;
+  width:120px;
+  height:40px;
+  border-radius:20px;
+}
+.buy1:hover,.buy2:hover{
+  pointer:cursor;
+  background-color:orange;
+}
+
+.buy1{
+  position:fixed;
+  bottom:30px;
+  left:60px;
+  
+}
+.buy2{
+  position:fixed;
+  bottom:30px;
+  right:60px;
+}
