@@ -11,8 +11,9 @@ export default function pcard(props){
     price={props.price}
     pic={props.pic}
     desc={props.desc}
+    func={props.func1}
     />]);
-      props.func1(3)
+      
     }}
     >
     <img src={`./PRODUCTS${props.pic}`}/>

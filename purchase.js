@@ -6,6 +6,8 @@ export default function purchase(props){
   }
   return(
     <div className="purchase">
+      {props.func&&<button className="back" onClick={props.func}>Back</button>}
+    
       <img src={`./PRODUCTS${props.pic}`}/>
       <h2>{props.name}
       </h2>

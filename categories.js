@@ -42,8 +42,9 @@ export default function cate() {
   )}
   </div>
   const [a,seta]=React.useState(r);
+ 
   function change(av){
-   console.log(av)
+   
    let choice;
    if(av==1)
    choice=alna;
@@ -58,7 +59,7 @@ export default function cate() {
    }
    //console.log(choice)
   const d=choice.map((ab)=>{
-    return(
+    return(<div id="jugad" onClick={()=>{setmode(1)}}>
       <Pc
       key={ab.name}
       name={ab.name}
@@ -66,7 +67,8 @@ export default function cate() {
       price={ab.price}
       desc={ab.desc}
       func={seta}
-      />
+      func1={()=>change(av)}
+      /></div>
       );
   });
   setmode(2);
@@ -76,5 +78,7 @@ export default function cate() {
 if(mode==1)
   return (<div>{a}</div>);
   else if(mode==2)
-  return (<div><button className="back" onClick={()=>{seta(r)}}>Back</button>{a}</div>);
+  return (<div><button className="back" onClick={()=>{setmode(1)
+    seta(r)}}>Back</button>{a}</div>);
+ 
 }
