@@ -4,6 +4,7 @@ import Cat from "./categories";
 import Order from "./order";
 import Cart from "./cart";
 import About from "./about";
+
 export default function Rd(){
   const[op,setop]=React.useState(1);
   let output;
@@ -29,7 +30,8 @@ export default function Rd(){
   <i>Storage with elegance</i></span></div>
   <nav>
   <ul className="navi">
-  <li><a onClick={()=>setop(1)}><i className='bx bx-home'></i> Home</a></li>
+  <li><a onClick={()=>{setop(1);
+  }}><i className='bx bx-home'></i> Home</a></li>
   <li><a onClick={()=>setop(2)}><i className='bx bx-category' ></i> Products</a></li>
   <li><a onClick={()=>setop(4)}><i className='bx bx-cart' ></i> Cart</a></li>
   <li><a onClick={()=>setop(3)}><i className='bx bx-purchase-tag' ></i> Orders</a></li>

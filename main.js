@@ -4,9 +4,13 @@ import datac from "./PRODUCTS/product"
 import cool from "./PRODUCTS/cooler";
 import alna from "./PRODUCTS/alna";
 import show from "./PRODUCTS/showcase";
-export default function main(){
-   const [r,setr]=React.useState(true);
+//export function setr();
+export default function main(){ 
+const [r,setr]=React.useState(true);
    const [a,seta]=React.useState([]);
+   
+   
+   //setr(d[0]);
   const pc =datac.map(ab=>{
     return(
       <Pc
@@ -74,7 +78,11 @@ export default function main(){
   );}
   else{
     return(
-      <div>{a}</div>
+      <div><button className="back" onClick={()=>{setr(true)}}>Back</button>
+      {a}
+      </div>
       );
   }
+
 }
+//export function setr();

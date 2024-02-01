@@ -9,6 +9,6 @@ export default [
     name:"L Showcase",
     pic:"/pics/lshow.jpg",
     price:"₹4,000",
-    descdesc:"A L shaped shelf for keeping showpieces and some extra storage."
+    desc:"A L shaped shelf for keeping showpieces and some extra storage."
   }
   ]
