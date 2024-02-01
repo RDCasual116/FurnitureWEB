@@ -1,6 +1,20 @@
 import React from 'react';
 import {arr} from "./cart";
+export let tick={}
 export default function purchase(props){
+  const d=
+  <button onClick={()=>{cart();
+    tick[props.name]=true;
+    test();
+  }}>Add to cart</button>
+  const real=(!tick[props.name])?d:<div></div>
+  
+  function test(){
+    let rea=(!tick[props.name])?d:<div></div>
+    setrd(rea);
+  }
+  
+  const[rd,setrd]=React.useState(real);
   function cart(){
     arr.push({...props});
   }
@@ -13,7 +27,7 @@ export default function purchase(props){
       </h2>
       <h4>{props.price}</h4>
       <p>{props.desc}</p>
-      <span><button onClick={cart}>Add to cart</button><button>Buy</button></span>
+      <span>{rd}<button>Buy</button></span>
       </div>
     );
 }
