@@ -1,7 +1,16 @@
 import React from 'react';
 import {arr} from "./cart";
+import {log} from "./order";
 export let tick={}
 export default function purchase(props){
+  function buy(){
+    log.push({
+       "name":props.name,
+     "price":props.price,
+     "pic":props.pic
+    })
+  }
+  
   const d=
   <button onClick={()=>{cart();
     tick[props.name]=true;
@@ -27,7 +36,7 @@ export default function purchase(props){
       </h2>
       <h4>{props.price}</h4>
       <p>{props.desc}</p>
-      <span>{rd}<button>Buy</button></span>
+      <span>{rd}<button onClick={buy}>Buy</button></span>
       </div>
     );
 }
