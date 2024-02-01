@@ -45,7 +45,8 @@ arr=temp;
       </div>
       );
   }));
-  return (<div>{ab}
+  console.log([])
+  return (<div>{ab.length===0?<h3>YOUR CART IS EMPTY</h3>:ab}
   <button className="buy1">Buy</button>
   <button className="buy2" onClick={empty}>Remove</button>
   </div>);
