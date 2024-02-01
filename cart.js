@@ -1,7 +1,15 @@
 import React from "react";
+import {tick} from "./purchase.js"
 export let arr=[];
 export default function cart() {
+  //console.log(tick);
  function empty(){
+   for (let key in tick) {
+  if (tick.hasOwnProperty(key)) {
+    delete tick[key];
+  }
+}
+
    var temp=[];
 arr=temp;
    setab([]);
@@ -36,16 +44,17 @@ arr=temp;
     <span>{a.name}</span>
      <big>{a.price}</big>
      </div>
-     <span className="cbutton"><button>Buy</button>
+     <span className="cbutton"><button >Buy</button>
      <button onClick={()=>{
      //console.log(a.name)
+     delete tick[a.name]
      remov(a.name);
      }}>Remove</button>
      </span>
       </div>
       );
   }));
-  console.log([])
+//  console.log([])
   return (<div>{ab.length===0?<h3>YOUR CART IS EMPTY</h3>:ab}
   <button className="buy1">Buy</button>
   <button className="buy2" onClick={empty}>Remove</button>
