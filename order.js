@@ -1,7 +1,7 @@
 import React from "react";
 export const log=[];
 export default function about() {
-  console.log(log[0].name)
+ // console.log(log[0].name)
   const order=log.map((a,index)=>{return (
     <div className="order" key={index}>
     <img src={`./PRODUCTS${a.pic}`}/>
